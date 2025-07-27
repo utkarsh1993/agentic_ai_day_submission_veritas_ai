@@ -1,0 +1,141 @@
+.grower-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  margin: 20px 0 0;
+}
+
+.key-services-section {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: left;
+}
+
+.key-services-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.key-service {
+  margin-bottom: 15px;
+}
+
+.key-service strong {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.key-service p {
+  margin-top: 0;
+}
+
+.recommendation-section {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.recommendation-section strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.recommendation-section p {
+  margin-top: 0;
+  padding-left: 10px;
+}
+
+.recommendation-divider {
+  border: 0;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 1rem 0;
+}
+.soil-health-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  color: black;
+}
+
+.soil-health-table th,
+.soil-health-table td {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 8px;
+  text-align: left;
+}
+
+.soil-health-table th {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.grower-service-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.fertilizer-card {
+  color: black;
+}
+
+.grower-service-card h3 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  text-decoration: underline;
+}
+
+.key-services-section h4,
+.recommendation-section strong,
+.key-service strong {
+  color: blue;
+  font-size: 1.3rem;
+}
+
+.grower-service-card h3.fertilizer-title {
+  color: black;
+}
+
+.card-loader {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top: 4px solid #fff;
+  width: 40px;
+  height: 40px;
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.expandable-item button {
+  color: #00008b;
+}
+
+.expandable-item :focus {
+  outline: none;
+}

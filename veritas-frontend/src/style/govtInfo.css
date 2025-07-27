@@ -1,0 +1,191 @@
+.schemes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(217, 228, 231, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+  text-align: left;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.govtCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-wrapper {
+  display: flex;
+  background-color: lightyellow;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-left {
+  flex: 2;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: lightyellow;
+}
+
+.modal-right {
+  flex: 1;
+  padding: 20px;
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: red;
+}
+
+.modal-divider {
+  width: 1px;
+  background-color: #ccc;
+}
+
+.faqs-container {
+  max-height: 45vh;
+  overflow-y: auto;
+  padding-right: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  color: #333;
+}
+
+.faq-question:focus {
+  outline: none;
+}
+
+.faq-answer {
+  padding: 10px 0 0 15px;
+  margin-top: 5px;
+  border-left: 3px solid #0056b3;
+  color: #333;
+}
+
+.modal-content a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.modal-content a:hover {
+  text-decoration: underline;
+}
+
+/* ==== Chatbot UI Styling ==== */
+
+.chatbot-ui {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.chat-window {
+  flex: 1;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  max-height: 300px;
+}
+
+.chat-message {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 90%;
+}
+
+.user-msg {
+  align-self: flex-end;
+  background-color: #d1e7dd;
+}
+
+.bot-msg {
+  align-self: flex-start;
+  background-color: #f8d7da;
+}
+
+.chat-input {
+  padding: 8px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+}

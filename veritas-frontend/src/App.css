@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfH0iVwvCfQe4R54x2-R7bDunP5IH6kF1ixg&s"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: black;
+}
+
+.light-text {
+  color: white;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f4f5ef;
+}
+
+.head {
+  margin: 5px;
+}
+
+h1 {
+  color: black;
+}
+
+.dropdown {
+  text-align: center;
+  margin: 1rem;
+}
+
+select {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 800px;
+}
+.buttonDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+.button-grid button {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.button-grid button:hover {
+  background-color: white;
+  color: #00008b;
+  font-weight: bold;
+  border: 1px solid #00008b;
+}
+
+.bottom-right {
+  text-align: right;
+  padding: 1rem 2rem;
+}
+
+.bottom-right button {
+  background-color: #00008b;
+  color: white;
+  border-radius: 20px;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* Yield Component Styles */
+.container {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfH0iVwvCfQe4R54x2-R7bDunP5IH6kF1ixg&s");
+  background-size: cover;
+  min-height: 100vh;
+  width: auto;
+  /* padding: 2rem; */
+}
+
+.header {
+  text-align: center;
+  color: black;
+}
+
+.selector {
+  margin-bottom: 1rem;
+}
+
+.image-upload {
+  margin-top: 1rem;
+}
+
+.image-preview {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.image-preview img {
+  width: 30%;
+  height: 400px;
+}
+
+.diagnose-button {
+  margin-top: 1rem;
+  background-color: #00008b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.select-button {
+  margin: 0.5rem;
+  background-color: #00008b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-button {
+  margin-top: 1rem;
+  background-color: #00008b;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50px;
+  height: 35px;
+  align-items: center;
+  justify-content: center;
+}
+
+.diagnosis-box {
+  background-color: grey;
+  color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.diagnosis-box .section-title {
+  color: black;
+  font-weight: bold;
+}
+
+.ask-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfH0iVwvCfQe4R54x2-R7bDunP5IH6kF1ixg&s");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.main-back {
+  background-color: white;
+}
+
+.chat-button {
+  padding: 0;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #ffffff;
+  /* border-radius: 50%; */
+  width: 75px;
+  height: 75px;
+  cursor: pointer;
+  display: flex;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  border-radius: 10%;
+}
+
+.chat-button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+   border-radius: 10%;
+  pointer-events: none
+}
+
+#google_translate_element {
+  position: absolute;
+  top: 0.5rem;
+  right: 5px;
+  z-index: 1000;
+}
+
+.goog-te-combo {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.glass-background {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px); /* adds a frosted-glass effect */
+  -webkit-backdrop-filter: blur(4px); /* for Safari support */
+}
+
+.weather-info {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.weather-info-left {
+  padding-right: 1rem;
+}
+
+.weather-info-left select {
+  width: 100%;
+  padding: 5px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 0.5rem;
+}
+
+.weather-info-left .static-text {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0;
+}
+
+.weather-info-divider {
+  width: 2px;
+  background-color: #ccc;
+  align-self: stretch;
+}
+
+.weather-info-right {
+  flex: 3;
+  text-align: right;
+  padding-left: 1rem;
+  color:red;
+}
+
+.location-box{
+  color:black
+}
+
+.goog-logo-link {
+  display:none !important;
+} 
+  
+.goog-te-gadget{
+  color: transparent !important;
+}
+
+.goog-te-gadget {
+  font-size: 0px;
+}
+
+table {
+  border: 1px solid black;
+  border-radius: 10px;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+  border-bottom-width: 2px;
+}
+
+table tr:last-child td {
+  border-bottom: 0;
+}
+
+.grey-button{
+  background-color: #c3c3c3;
+  color:white
+}
